@@ -6,12 +6,20 @@ public class WordsBuilder {
         String phrase = "";
 
         while (count < chars.length) {
-            if (chars[count] != ' ' && count != chars.length - 1) {
+            if (count != chars.length - 1) {
                 phrase += chars[count];
+            } else {
+                if (chars[count] != ' ') {
+                    phrase += chars[count];
+                }
             }
             count++;
         }
 
         System.out.println(phrase);
+    }
+
+    public static void main(String[] args) {
+        new WordsBuilder().buildPhrase("world ".toCharArray());
     }
 }
