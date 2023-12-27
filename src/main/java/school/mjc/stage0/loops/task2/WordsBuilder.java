@@ -6,13 +6,7 @@ public class WordsBuilder {
         String phrase = "";
 
         while (count < chars.length) {
-            if (count != chars.length - 1) {
-                phrase += chars[count];
-            } else {
-                if (chars[count] != ' ') {
-                    phrase += chars[count];
-                }
-            }
+            phrase += chars[count];
             count++;
         }
 
