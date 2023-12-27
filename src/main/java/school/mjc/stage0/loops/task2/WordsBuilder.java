@@ -16,10 +16,6 @@ public class WordsBuilder {
             count++;
         }
 
-        System.out.println(phrase);
-    }
-
-    public static void main(String[] args) {
-        new WordsBuilder().buildPhrase("world ".toCharArray());
+        System.out.println(phrase.replaceAll("\n|\r\n", ""));
     }
 }
